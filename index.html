@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achados e Perdidos - Escola</title>
+</head>
+<body>
+    <h1>Sistemas de Achados e Perdidos</h1>
+     <form id="form-cadastro">
+        <h3>Cadastrar Novo Item Encontrado</h3>
+        <input type="text" id="titulo" placeholder="Título do item (ex: Garrafa Azul)" required>
+        <input type="text" id="descricao" placeholder="Descrição (cor, marca, detalhes...)">
+        <input type="text" id="local_encontrado" placeholder="Local encontrado (ex: Quadra)" required>
+        <input type="date" id="data_encontro" required>
+        <button type="submit"> Cadastrar Item</button>
+     </form>
+     <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Descrição</th>
+                <th>Local</th>
+                <th>Data</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+     </table>
+</body>
+</html>
