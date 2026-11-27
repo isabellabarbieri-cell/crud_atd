@@ -38,10 +38,12 @@ async function carregarItens () {
 }
 async function cadastrarItem(evento)  {
     evento.preventDefault();
-    const novoItem = {
-        titulo: document.getElementById("titulo").value,
-        local_encontrado:document.getElementById(Data_encontro).value
-    };
+   const novoItem = {
+    titulo: document.getElementById("titulo").value,
+    descricao: document.getElementById("descricao").value,
+    local_encontrado: document.getElementById("local_encontrado").value,
+    data_encontro: document.getElementById("data_encontro").value
+};
     const resposta = await fetch(API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
